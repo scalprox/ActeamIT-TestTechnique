@@ -13,6 +13,7 @@
 
     .panel__destination{
       font-weight: 600;
+      margin-right: 2rem;
     }
 
     .panel__trainId{
@@ -45,9 +46,23 @@
         color: $color-yellow;
       }
     }
+  }
+}
 
-    //&:after{
-    //  content: '●';
-    //}
+@media (max-width: 860px) {
+  .panel__element .panel__schedule{
+    padding-left: 2rem;
+    .panel__clock, .panel__delay{
+      width: 80px;
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .panel__element .panel__schedule{
+    padding-left: 2rem;
+    .panel__clock, .panel__delay{
+      width: 60px;
+    }
   }
 }
