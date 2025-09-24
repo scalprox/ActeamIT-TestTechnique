@@ -18,11 +18,11 @@ const DisplayPanel = ({panelType}:Props) => {
                 {panelType === "arrival" ? "Prochaines arrivées": "Prochains départs"}
                 <Train/>
             </h2>
-            <ul className="panel__list">
+            <ol className="panel__list">
                 {filteredTrains.map((train, index) => (
                     <PanelElement key={index} train={train}/>
                 ))}
-            </ul>
+            </ol>
         </div>
     );
 };
