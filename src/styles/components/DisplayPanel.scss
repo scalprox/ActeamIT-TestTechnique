@@ -1,12 +1,14 @@
 @use '../variables' as *;
 
 .container__panel{
+  overflow: hidden;
   flex: 1;
   display: flex;
   flex-direction: column;
   color: white;
   border-radius: $border-radius;
   box-shadow: $simple-shadow;
+  min-width: 400px;
 
   .panel__title{
     position: relative;
@@ -52,6 +54,12 @@
   .panel__list{
     display: flex;
     flex-direction: column;
+
+    .panel__empty{
+      width: 100%;
+      padding: 1rem;
+      display: flex;
+    }
   }
 }
 
@@ -68,8 +76,11 @@
 }
 
 @media (max-width: 520px) {
-  .container__panel .panel__title > svg{
-    width: 30px;
-    height: 30px;
+  .container__panel {
+    min-width: 100%;
+    .panel__title > svg {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
