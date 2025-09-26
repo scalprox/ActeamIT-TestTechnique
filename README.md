@@ -3,12 +3,19 @@
 Application affichant un panneau d'information sur les arrivées et départs des trains en gare.
 
 ## Initialisation
-Version de Node recommandée : V22.14.0
+Version de **Node** recommandée : V22.14.0
 
-- `npm install` : installe les dépendances nécessaires au projet.
-- `npm run build` : lance le build de l'application.
-- `npm run preview` : lance l'application compilée.
-- `npm run dev` : lance l'application en mode développement.
+### Installation des dépendances
+Avant de continuer vous devez installer les dépendances en exécutant la commande `npm install`.
+### Développement
+Pour lancer le serveur de développement avec **Vite** il vous suffit d'exécuter la commande `npm run dev`.
+L'application sera disponible à l'adresse suivante : http://localhost:5173
+
+### Build et prévisualisation
+Pour lancer le build de l'application vous devrez exécuter la commande `npm run build`.
+
+Une fois le build fini vous pourrez lancer le serveur de prévisualisation avec la commande `npm run preview`.
+L'application sera disponible à l'adresse suivante : http://localhost:4173
 
 ## Langage du projet
 
